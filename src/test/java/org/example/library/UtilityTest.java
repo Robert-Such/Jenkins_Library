@@ -7,7 +7,7 @@ class UtilityTest {
 
     @Test
     void testGreetWithEnvironmentVariable() {
-        String name = System.getProperty("TEST_NAME");
+        String name = System.getenv("TEST_NAME");
             assertEquals("Hello, World!", Utility.greet(name));
     }
 }
